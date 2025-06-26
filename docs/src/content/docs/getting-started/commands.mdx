@@ -1,0 +1,36 @@
+---
+title: Extension Commands
+sidebar:
+  order: 1
+---
+Pressing F1 in vscode to display the commands will include commands from the extension. They are all prefixed with Image Storage Explorer.
+
+## Image Server:
+
+### Restart Local Image Server
+
+ ```Image Storage Explorer: Restart Local Image Server```
+
+Command defined in packages\imageStorageExplorer\package.json as "imageStorageExplorer.restartLocalWebServer"
+
+If the local image server is running it will first be closed. A port number will be gotten from the workspace configuration Local Server Port, then the port number will be used to start a server with a handle to close it later.
+
+### Stop Local Image Server
+
+{/* <span class='bg-zinc-400 text-zinc-900 px-2 font-mono text-xl mt-4'>Image Storage Explorer: Stop Local Image Server</span> */}
+
+ ```Image Storage Explorer: Stop Local Image Server```
+
+Checks for an existing local image server. If one exists, sets the local image server, localWebServerCloseHandle, to undefined. Then displays a window message informing the user the local web server has stopped.
+
+Command defined in packages\imageStorageExplorer\package.json as "imageStorageExplorer.stopLocalWebServer"
+
+## Open Image gallery panel
+
+Command defined in packages\imageStorageExplorer\package.json as "imageStorageExplorer.showImageExplorerPanel"
+
+Opens the main panel in vscode's Editor Container.
+
+## Enter Licence Key
+
+Allows the input of a Licence Key, that is run through the activateLicence function, as an alternative to inputting the key from the side panel.

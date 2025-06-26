@@ -1,0 +1,153 @@
+---
+title: Image Storage Explorer
+description: Get started building your docs site with Starlight.
+template: splash
+hero:
+  tagline: Extension for VSCode
+#   image:
+#     file: ../../assets/houston.webp
+#   actions:
+#     - text: Example Guide
+#       link: /guides/example/
+#       icon: right-arrow
+#     - text: Read the Starlight docs
+#       link: https://starlight.astro.build
+#       icon: external
+#       variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+// import Hero from '../../components/hero.astro'
+
+{/* ## Next steps */}
+
+{/* <Hero /> */}
+<section className="prose text-zinc-300 m-auto max-w-[120ch]  ">
+        {/* <h1 className="text-3xl py-6 font-bold text-center text-amber-600 "> */}
+        <h1 className="text-amber-600 text-4xl  font-normal">
+          Helping the Developer stay in the code
+        </h1>
+        <p className="">
+          As developers we found ourselves constantly mentally switching between
+          applications, coding, and login details as we gathered links,
+          corrected spelling errors, and located assets for our projects.
+        </p>
+        <p className="">
+          We developed Image Storage Explorer in response to our need to reduce
+          that mental load, to avoid switching between applications, reducing
+          the path between assets and code.
+        </p>
+        <p className="">
+          The extension provides us with with a tool keeps us within Visual
+          Studio Code. It connects us to local files, buckets, and assets. As a
+          developer focussed on Cloudflare first it was originally built to
+          answer that need. Since then we have added some of the usual suspects
+          and we will be adding more as the opportunities arise.
+        </p>
+        <p className="">
+          This extension is currently in Beta, we hope to get it to the VSCode
+          Market place as both a free and premium version.
+        </p>
+        <p className="">
+          What follows are some key concepts we have addressed in our VS Code
+          extension.
+        </p>
+        <h2 className="text-amber-600   font-normal">
+          Pasting the image path directly into your code
+        </h2>
+        <p className="">
+          From source bucket to source code the extension copies the path and
+          html wrapper for the image directly as a point and click process.
+          Later you will see how we extended this feature.
+        </p>
+        <video controls className="mt-2 ">
+          <source
+            src="https://images.azydeco.com/CloudflareR2/1_Copy_Image_Paste_Code-CloudflareR2.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <h2 className="mt-10 mb-4 text-2xl font-bold text-amber-600   font-normal">
+          Make a List item from a collection of images
+        </h2>
+        <p className="">
+          Wrapping the multiple image selections and dropping then into the
+          codebase surrounded by respective LI elements within the code
+        </p>
+        <video controls>
+          <source
+            src="https://images.azydeco.com/CloudflareR2/2_Select_Multiple_Images_Paste_Code-CloudflareR2.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <h2 className=" text-amber-600   font-normal">
+          Aiding in documentation creation with Markdown ready paste
+        </h2>
+        <p className="">
+          Switching from HTML to Markdown when handling adding assets is a
+          process which can cause developers to avoid the task of better
+          documentation. We built this tool and use it for ourselves to answer
+          this problem
+        </p>
+        <video controls>
+          <source
+            src="https://images.azydeco.com/CloudflareR2/3_Select_Paste_Markdown-CloudflareR2.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <h2 className=" text-amber-600   font-normal">
+          Customisable Masks for Copy/Paste
+        </h2>
+        <p className="">
+          In the premium version of the Extension you can amend the mask which
+          handles the cut/paste process.
+        </p>
+        <video controls>
+          <source
+            src="https://images.azydeco.com/CloudflareR2/4_Change_Mask_Paste_Code-CloudflareR2.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <h2 className=" text-amber-600   font-normal">
+          Filter by Prefix and Key
+        </h2>
+        <p className="">
+          Allowing to search by object key within the bucket based on objects
+          returned form the bucket allows fast find and paste.
+        </p>
+        <video controls>
+          <source
+            src="https://images.azydeco.com/CloudflareR2/5_Select_Source_Filter-CloudflareR2.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <h2 className="mt-10 mb-4 text-2xl font-bold text-amber-600   font-normal">
+          Cloudflare First
+        </h2>
+        <p className="">
+          We think its time developers thought Cloudflare first, though other
+          CDN buckets are available.
+        </p>
+        <video controls>
+          <source
+            src="https://images.azydeco.com/CloudflareR2/6_Show_Add_Source_List.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <h2 className=" text-amber-600   font-normal">
+          Work Local if you need
+        </h2>
+        <p className="">
+          Lets not ignore that sometimes the assets are within your own
+          Workspace and you want to use them. We treat the local folder of the
+          workspace the same we we treat the Buckets and focus developers on
+          staying in a oject-key relationship with assets and media they wish to
+          use.
+          <video controls>
+            <source
+              src="https://images.azydeco.com/CloudflareR2/7_Local_Source_Select_Copy_Paste.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </p>
+      </section>
+

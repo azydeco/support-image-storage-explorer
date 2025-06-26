@@ -1,0 +1,36 @@
+---
+import {LinkButton} from '@astrojs/starlight/components';
+import Icon from './icon.astro';
+const { version } = Astro.props
+---
+
+<div
+  class="container pt-24 pb-14 flex flex-col justify-center items-center gap-8 sm:gap-20"
+>
+  <h2
+    class="uppercase text-center text-balance text-5xl sm:text-6xl md:text-7xl font-az-fancy relative borderd"
+  >
+    <span
+      class="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-500"
+    >
+      Image
+    </span>{' '}
+    <span class="font-semibold text-amber-50">storage</span>{' '}
+    <span
+      class="font-semibold text-transparent bg-clip-text uppercase text-balance bg-gradient-to-r from-amber-500 to-amber-600"
+    >
+      explorer
+    </span>
+    <!-- <span
+      class="inline-block pl-2 text-2xl lg:absolute lg:rotate-45 lg:-right-8 lg:-top-3 text-blue-500 font-semibold lowercase text-shadow-md hover:scale-105 transition-transform"
+    >
+      Beta
+    </span> -->
+  </h2>
+  <!-- <Icon /> -->
+
+  <h3 class="text-4xl font-az-fancy max-w-4xl text-balance text-center">
+    Extension for VSCode
+  </h3>
+  <LinkButton href='/getting-started/installation/'>Get Started</LinkButton>
+</div>
