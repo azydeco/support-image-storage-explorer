@@ -79,7 +79,7 @@ If you try to access this URL in your browser, you will most likely get an error
 
 this is because the blob is private and you need to authenticate to access it.
 
-### Generate a SAS token
+## Generate a SAS token
 
 You will need to generate a SAS token to access the blob without the account key
 
