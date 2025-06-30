@@ -95,3 +95,16 @@ An active subscription is required to add an Azure provider to the extension.
 
 You can give your provider any Name, it will be displayed on the side panel with the name you enter.
 
+The Storage Account Name must match the name you see on the Azure Portal.
+
+The Access Key used can be either key 1 or key 2.
+
+The container name is found under Data Storage, copy it into the form.
+
+The Public Domain or Path is optional, it will be prefixed to the images url when you copy an image mask from the extension main panel.
+
+The Prefix will filter the images fetched from the bucket to only objects with keys beginning with your input string.
+
+The option MaxKeys can be used to limit how many objects are fetched from the bucket. It defaults to 1000.
+
+When you are done click on create and the provider will be validated then saved. If validation fails the provider will not be saved and you will be shown any errors on the form.
