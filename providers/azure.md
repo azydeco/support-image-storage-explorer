@@ -1,6 +1,6 @@
-# Get your Azure Storage Access variables
+# Azure Blob Storage
 
-### Requirements
+## Requirements
 
 To access your Azure Blob Storage account programmatically, you will need the following information:
 
@@ -27,7 +27,7 @@ AZURE_STORAGE_ACCOUNT_CONTAINER_NAME=<your_container_name>
 
 This is your **Storage Account Name**. You will need this to access your storage account programmatically.
 
-### Find Your - Storage Account Access Key
+## Find Your - Storage Account Access Key
 
 Follow the previous steps to get to Azure portal home page.
 
@@ -77,7 +77,7 @@ If you try to access this URL in your browser, you will most likely get an error
 
 this is because the blob is private and you need to authenticate to access it.
 
-### Generate a SAS token
+## Generate a SAS token
 
 You will need to generate a SAS token to access the blob without the account key
 

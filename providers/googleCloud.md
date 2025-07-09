@@ -1,8 +1,8 @@
-# Google Cloud
+# Google Cloud Storage
 
 This document is relevant when using an Account Key to access your google cloud bucket
 
-### Requirements
+## Requirements
 
 - Google cloud account.
 
