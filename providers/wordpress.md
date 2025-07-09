@@ -6,4 +6,10 @@ Using the extension with a Wordpress Media Library
 
 - Wordpress site
 
-## Authenticating with Wordpress
+<!-- ## Authenticating with Wordpress -->
+
+## Troubleshooting
+
+### Uploading images to Wordpress
+
+Images cannot be uploaded to wordpress providers from the extension.
