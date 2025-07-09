@@ -2,7 +2,7 @@
 
 Using a Cloudflare R2 provider with the extension.
 
-### Requirements
+## Requirements
 
 - Cloudflare account
 - Bucket Name

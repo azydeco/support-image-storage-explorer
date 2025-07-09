@@ -1,6 +1,6 @@
 # Azure Blob Storage
 
-### Requirements
+## Requirements
 
 - Storage Account Name
 - Access Key
@@ -49,7 +49,7 @@ get the accountKey for your Azure Storage account, follow these steps:
 
 Navigate to the Azure Portal: Go to the Azure Portal.
 
-Find Your Storage Account:
+## Find Your Storage Account
 
 In the left-hand menu, click on "Storage accounts".
 Select the storage account for which you want to retrieve the account key.
