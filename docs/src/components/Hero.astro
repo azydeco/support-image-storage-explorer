@@ -1,7 +1,7 @@
 ---
 import { LinkButton } from '@astrojs/starlight/components'
 import Icon from './icon.astro'
-const { version } = Astro.props
+// const { version } = Astro.site?.pathname
 ---
 
 <div
@@ -32,5 +32,7 @@ const { version } = Astro.props
   <h3 class="text-4xl font-az-fancy max-w-4xl text-balance text-center">
     Extension for VSCode
   </h3>
-  <LinkButton href="/getting-started/installation/">Get Started</LinkButton>
+  <LinkButton href="/upgraded-disco/getting-started/installation/"
+    >Get Started</LinkButton
+  >
 </div>
