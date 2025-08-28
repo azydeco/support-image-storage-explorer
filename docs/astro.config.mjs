@@ -2,9 +2,9 @@
 import { defineConfig } from 'astro/config'
 import starlight from '@astrojs/starlight'
 
-import tailwindcss from '@tailwindcss/vite';
+import tailwindcss from '@tailwindcss/vite'
 
-import cloudflare from '@astrojs/cloudflare';
+import cloudflare from '@astrojs/cloudflare'
 
 // import cloudflare from '@astrojs/cloudflare';
 
@@ -14,7 +14,7 @@ export default defineConfig({
     starlight({
       title: 'Image Storage Explorer',
       components: {
-        Hero: './src/components/hero.astro',
+        Hero: './src/components/Hero.astro',
       },
       customCss: [
         // Path to your Tailwind base styles:
@@ -52,5 +52,5 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
-  adapter: cloudflare(),
+  // adapter: cloudflare(),
 })
