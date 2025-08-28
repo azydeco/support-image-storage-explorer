@@ -10,6 +10,8 @@ import cloudflare from '@astrojs/cloudflare'
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://philstenning.github.io',
+  base: '/upgraded-disco',
   integrations: [
     starlight({
       title: 'Image Storage Explorer',
