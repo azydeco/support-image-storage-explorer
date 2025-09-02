@@ -2,7 +2,7 @@
 
 Accessing your AWS S3 bucket with the extension.
 
-### Requirements
+## Requirements
 
 - AWS Account
 - Bucket Name

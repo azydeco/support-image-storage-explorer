@@ -1,7 +1,7 @@
 ---
 title: AWS S3
+info: Setting up AWS S3 as a Storage Provider
 ---
-Accessing your AWS S3 bucket with the extension.
 
 ## Requirements
 
@@ -10,14 +10,14 @@ Accessing your AWS S3 bucket with the extension.
 - Access Key
 - Secret Access Key
 
-## **AWS S3 and CloudFront Configuration Guide**
+## AWS S3 and CloudFront Configuration Guide
 
 This guide provides step-by-step instructions on how to configure an Amazon S3 bucket, set up IAM policies and users for programmatic access, create a CloudFront distribution to serve content from the bucket, and define the bucket's CORS policy.
 
 We will be creating a Bucket called : azydeco_demo_bucket
 The bucket will not be directly accessible via the internet; however a IAM policy and user account will be pointed to the bucket and this will enable programmatic access which can be used in conjunction with Image Storage Explorer allowing you to interact with the Image assets. Additionally these instructions will explain how to create a cloudfront end point for the bucket which makes the content visible to the web.
 
-## **1. Create a New S3 Bucket**
+### Create a New S3 Bucket
 
 An S3 bucket is a fundamental storage unit in AWS S3, used to store objects (files).
 
@@ -33,7 +33,7 @@ An S3 bucket is a fundamental storage unit in AWS S3, used to store objects (fil
    - Leave other settings as default unless you have specific requirements.
    - Click **Create bucket** at the bottom of the page.
 
-## **2. Create an IAM Policy (azydeco_ise_example_policy)**
+### Create an IAM Policy (azydeco_ise_example_policy)
 
 An IAM (Identity and Access Management) policy defines permissions for an entity in AWS. This policy will grant specific permissions to interact with `azydeco_demo_bucket`.
 
@@ -73,7 +73,7 @@ An IAM (Identity and Access Management) policy defines permissions for an entity
 - **Description**: (Optional) Add a description, e.g., "Policy for azydeco_demo_bucket access".
 - Click **Create policy**.
 
-## **3. Create an IAM User Account and Attach the Policy**
+### Create an IAM User Account and Attach the Policy
 
 An IAM user represents a person or service that interacts with AWS. We will create a user with programmatic access and attach the policy we just created.
 
@@ -96,7 +96,7 @@ An IAM user represents a person or service that interacts with AWS. We will crea
    - Click **Download .csv** to save these credentials to a file. **This is your only chance to download the secret access key.** If you lose it, you will need to generate new credentials.
    - Store these credentials securely.
 
-## **4. Create a CloudFront Resource as a Front End**
+### Create a CloudFront Resource as a Front End
 
 CloudFront is a content delivery network (CDN) service that securely delivers content with low latency and high transfer speeds. We will use it to serve content from your S3 bucket publicly.
 
@@ -115,7 +115,7 @@ CloudFront is a content delivery network (CDN) service that securely delivers co
 3. **Wait for Deployment**: CloudFront distributions take time to deploy (typically 10-20 minutes). The status will change from "Deploying" to "Deployed". Once deployed, you will see a **Domain name** (e.g., d1234abcd.cloudfront.net). This is the URL you will use to access your S3 content via CloudFront.  
    _Note: To make your content visible via CloudFront, you'll need to upload files to your azydeco_demo_bucket._
 
-## **5. Configure the S3 Bucket CORS Policy**
+### Configure the S3 Bucket CORS Policy
 
 CORS (Cross-Origin Resource Sharing) is a security feature in web browsers that prevents web pages from making requests to a different domain than the one that served the web page. You need to configure CORS on your S3 bucket to allow for example : localhost, localhost.dev, and awss3.azydeco.com to access its content.
 

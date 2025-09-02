@@ -1,5 +1,6 @@
 ---
 title: Azure
+info: Setting up Azure as a Storage Provider
 ---
 
 ## Requirements

@@ -1,7 +1,8 @@
 ---
 title: Google Cloud
+info: Setting up Google Cloud as a Storage Provider using an Service Account Key (SAK)
 ---
-This document is relevant when using an Account Key to access your google cloud bucket
+
 
 ## Requirements
 
