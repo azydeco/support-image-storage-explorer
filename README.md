@@ -6,6 +6,24 @@
 </div>
 
 
-### 2025 06 19 - Launched into the VS Code Marketplace
+## Installing the Extension
 
-[https://marketplace.visualstudio.com/items?itemName=Azydeco.image-storage-explorer&ssr=false#overview]
+You can install the extension form the [VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=Azydeco.image-storage-explorer&ssr=false#overview) or from within VScode itself from the [Extensions button in the activity bar](https://philstenning.github.io/upgraded-disco/getting-started/installation/) 
+
+## Documentation
+
+Visit our [Documentation site](https://philstenning.github.io/upgraded-disco/)
+
+## Support
+
+Having trouble? Check out any [Issues](https://github.com/azydeco/support-image-storage-explorer/issues)
+
+
+## Contributing
+
+Check out our [Contributors Guide](CONTRIBUTING.md) for help getting started.
+
+
+
+
+<!-- ### 2025 06 19 - Launched into the VS Code Marketplace -->
