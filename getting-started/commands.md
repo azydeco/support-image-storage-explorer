@@ -39,3 +39,7 @@ Opens a text box that allows the input of a Licence Key, as an alternative to in
 ## Show Licence Key
 
 Shows your licence key in an VSCode information message pop up.
+
+## Allow Information Messages
+
+Allows pop up information messages to be shown again if you had previously clicked Do Not Show Again on a message.

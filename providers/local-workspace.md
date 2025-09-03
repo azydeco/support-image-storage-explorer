@@ -2,7 +2,7 @@
 
 Using a local filesystem with the extension.
 
-### Requirements
+## Requirements
 
 - A directory containing image files
 
