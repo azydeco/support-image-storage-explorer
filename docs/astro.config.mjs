@@ -45,6 +45,10 @@ export default defineConfig({
           label: 'Providers',
           autogenerate: { directory: 'providers' },
         },
+        {
+          label: 'Troubleshooting',
+          autogenerate: { directory: 'troubleshooting' },
+        },
       ],
     }),
   ],
