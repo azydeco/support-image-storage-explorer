@@ -1,9 +1,10 @@
 ---
 title: Local Workspace
+info: Using a local filesystem with the extension
 sidebar:
   order: 1
 ---
-Using a local filesystem with the extension.
+
 
 ## Requirements
 

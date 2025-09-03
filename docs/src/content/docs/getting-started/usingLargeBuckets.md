@@ -1,4 +1,8 @@
-# Working with buckets containing lots of objects
+---
+title: Working with buckets containing lots of objects
+
+---
+
 
 If you are adding a large bucket containing more than 1000 objects it is recommended that you use a prefix otherwise loading will be slow.
 
