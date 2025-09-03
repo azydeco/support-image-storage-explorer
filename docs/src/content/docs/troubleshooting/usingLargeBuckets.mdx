@@ -4,7 +4,7 @@ title: Large Buckets
 ---
 import { Aside } from '@astrojs/starlight/components'
 
-If you are adding a bucket that is containing more than 5000 objects it is recommended that you use a prefix option when creating the Storage Provider, otherwise you might find your loading times to be slow.
+If you are adding a bucket that is containing more than 5000 objects it is recommended that you use the `Prefix` option when creating the Storage Provider, otherwise you might find your loading times to be slow.
 
 When you add or refresh your bucket we request all the objects starting from either the root of your bucket or from the prefix you entered, if you only have a few objects stored in a bucket then there is no issue, but you are also charged by your bucket provider for first listing the objects and then the fetching of them, so probably want to reduce this cost also.
 

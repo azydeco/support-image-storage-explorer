@@ -15,17 +15,35 @@ sidebar:
 
 ## Creating an R2 bucket
 
-Log into the Cloudflare dashboard and from your Cloudflare account open R2 Object Storage on the side bar.
+Log into the [Cloudflare dashboard](https://dash.cloudflare.com/), if you have more than one account select the one you will be accessing.
 
-Click on the Create bucket button and give your bucket a name, set a location for the bucket if you need to, then click Create bucket. The bucket should now be listed on the page. From here you will need to create an API token to get the values you can input into the extension to see the contents of your bucket.
+1. From the selected Cloudflare account, open R2 Object Storage on the side bar.
+
+
+![docs/providers/cf-r2.png](https://images.azydeco.com/docs/providers/cf-r2.png )
+
+2. Click on the Create bucket button
+
+3. give your bucket a name, set a location for the bucket if you need to,
+
+4. Click Create bucket. The bucket should now be listed on the page. From here you will need to create an API token to get the values you can input into the extension to see the contents of your bucket.
+
+![docs/providers/cf-r2-2.png](https://images.azydeco.com/docs/providers/cf-r2-2.png )
+
 
 ### API tokens
 
 From the R2 Object Storage page in your account on the Cloudflare Dashboard, there is an dropdown menu labelled API found next to the Create bucket button. Open the menu and click on Manage API tokens.
 
+![docs/providers/cf-r2-3.png](https://images.azydeco.com/docs/providers/cf-r2-3.png )
+
 You will be shown a page where you can create either an Account API token or a User API token. Only one API token is needed.
 
 Regardless if you choose to create an Account API token or a User API token, you can optionally choose permissions, specific buckets the token applies to, time to live, and IP address filtering before clicking on the Create API token button. You will be taken to a page that includes the values you need.
+
+If you will be uploading images make sure you select `Object Read & Write`
+
+![docs/providers/cf-r2-4.png](https://images.azydeco.com/docs/providers/cf-r2-4.png )
 
 ## Getting the Access Keys
 
@@ -35,13 +53,15 @@ To get access keys for an existing bucket you will need to repeat the previous s
 
 When an API token is created you will be shown the Access Key ID, Secret Access Key  and Endpoint. Save these values securely as they will not be shown again.
 
+![docs/providers/cf-r2-5.png](https://images.azydeco.com/docs/providers/cf-r2-5.png )
+
 The respective values now need to be copied into the inputs on the Add Provider Cloudflare R2 screen on the extension sidepanel. With each input filled in you should now be able to create the provider in the extension and your image objects will be shown on the main panel.
 
 ## Troubleshooting
 
 ### Images listed but not showing Cloudflare R2
 
-Images may be listed on the main panel with no image thumbnail shown. To fix this try clicking on the three dots besides the name of your selected provider on the side panel to open a dropdown menu, then clicking on Refresh Images from Source. Once the refresh has finished all of your images should be visible.
+Images may be listed on the main panel with no image thumbnail shown. To fix this try clicking on the three dots besides the name of your selected provider on the side panel to open a dropdown menu, then clicking on `Refresh Images from Source`. Once the refresh has finished all of your images should be visible.
 
 If the images are no longer listed after a refresh, they may have been removed from the bucket.
 
