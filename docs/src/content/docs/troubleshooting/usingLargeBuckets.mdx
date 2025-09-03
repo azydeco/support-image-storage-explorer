@@ -1,0 +1,53 @@
+---
+title: Large Buckets
+
+---
+import { Aside } from '@astrojs/starlight/components'
+
+If you are adding a bucket that is containing more than 5000 objects it is recommended that you use the `Prefix` option when creating the Storage Provider, otherwise you might find your loading times to be slow.
+
+When you add or refresh your bucket we request all the objects starting from either the root of your bucket or from the prefix you entered, if you only have a few objects stored in a bucket then there is no issue, but you are also charged by your bucket provider for first listing the objects and then the fetching of them, so probably want to reduce this cost also.
+
+## Using Prefixes
+
+if you have objects  with keys like the following
+
+- mycompany/images/2023/project-a/image.png
+- mycompany/images/2023/project-a/image_1.png
+- mycompany/images/2023/project-b/image.png
+- mycompany/images/2023/project-b/image_2.png
+- mycompany/images/2023/shop/image.png
+- mycompany/images/2023/shop/image_2.png
+- mycompany/images/2024/project-a/image.png
+- mycompany/images/2024/project-b/image_1.png
+- mycompany/images/2025/project-a/image_2.png
+
+You can now use a prefix of `mycompany/images/2023/project-b` to only return the ***two*** image that start with that prefix, the following example shows how you add it when using Cloudflare R2.
+
+![example of adding a prefix to a bucket](https://images.azydeco.com/docs/prefix-1.png)
+
+
+## Splitting Large Buckets
+
+<Aside type='note'>
+The following only works when you have an active subscription
+</Aside>
+If you are still having a Storage Provider with lots of images in it, you can split it so you only have the images need for woking on your current project.
+
+Click the ellipsis (...) on the right of the Storage provider you want to split, from the dropdown list select the clone.
+
+![docs/clone-1.png](https://images.azydeco.com/docs/clone-1.png )
+
+You will now have a copy of the selected Storage Provider complete with your securely stored credentials with the name `copy - yourbucketname`
+
+![docs/clone-2.png](https://images.azydeco.com/docs/clone-2.png )
+
+Now go ahead and once again click the ellipsis for each provider and rename it, and add or change the prefix for each you should now have something like this
+
+![docs/clone-3.png](https://images.azydeco.com/docs/clone-3.png )
+
+## Limiting the Downloaded Objects Keys
+
+Using the `MaxKeys` option when setting up your Storage Provider is another great solution, the default is set to 1000 but may be any value you like, higher or lower, but remember who is paying for your listing and fetching of object keys.
+
+
