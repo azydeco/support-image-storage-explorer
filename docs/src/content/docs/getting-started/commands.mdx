@@ -11,10 +11,9 @@ All commands are prefixed with ```Image Storage Explorer:```
 
 ![docs/2025-06-30 15_55_05-Windows Sandbox.webp](https://images.azydeco.com/docs/2025-06-30%2015_55_05-Windows%20Sandbox.webp )
 
-
 ## Restart Local Image Server
 
- ```
+ ```sh
  >Image Storage Explorer: Restart Local Image Server
  ```
 
@@ -24,16 +23,15 @@ If the local image server is running it will first be closed. A port number will
 
 {/* <span class='bg-zinc-400 text-zinc-900 px-2 font-mono text-xl mt-4'>Image Storage Explorer: Stop Local Image Server</span> */}
 
- ```
+ ```sh
  >Image Storage Explorer: Stop Local Image Server
  ```
 
 Checks for an existing local image server. If one exists, sets the local image server, localWebServerCloseHandle, to undefined. Then displays a window message informing the user the local web server has stopped.
 
-
 ## Enter Licence Key
 
-```
+```sh
 >Image Storage Explorer: Enter Licence Key
 ```
 
@@ -41,42 +39,47 @@ Allows the input of a Licence Key, that is run through the activateLicence funct
 
 ## Show Licence Key
 
-```
+```sh
 >Image Storage Explorer: Show Licence Key
 ```
-Pops open a dialog window enabling you to copy your Licence key, this is useful if you need to install the licence on another device or VM.
 
+Pops open a dialog window enabling you to copy your Licence key, this is useful if you need to install the licence on another device or VM.
 
 ## Show Image Storage Panel
 
-```
+```sh
 >Image Storage Explorer: Show Image Storage Panel
 ```
+
 Opens the main panel in vscode's Editor.
 
 ## Show InfoPanel
-```
+
+```sh
 >Image Storage Explorer: Show InfoPanel
 ```
+
 Opens the Discover page in the active window where you can start a trial or subscription.
 
 ## Revalidate Licence
 
-```
+```sh
 >Image Storage Explorer: Revalidate Licence
 ```
+
 If you have just purchased a licence, this command checks your licence state with our server manually.
 
-
 ## Help
-```
+
+```sh
 >Image Storage Explorer: Help
 ```
 
 Opens the Help page in the vscode window that lists each of these commands and describes what they do.
 
 ## Allow Information Messages
-```
+
+```sh
 >Image Storage Explorer: Allow Information Messages
 ```
 
