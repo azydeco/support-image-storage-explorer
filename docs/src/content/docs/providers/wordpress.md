@@ -3,7 +3,7 @@ title: Wordpress
 info: Using the extension with a Wordpress Media Library
 ---
 
-### Requirements
+## Requirements
 
 - Wordpress site
 
