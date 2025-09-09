@@ -18,3 +18,11 @@ The Wordpress provider option does not currently have authentication. You can ad
 ## Limitations
 
 You cannot use the extension to upload images to or delete images from a Wordpress media library due to Wordpress providers not having authentication.
+
+## Troubleshooting
+
+### Images listed but not showing Wordpress
+
+If images are listed on the main panel but the thumbnails are not showing they may have been moved, renamed or removed from the media library. You can refresh your provider by clicking on the three dots besides the provider name on the side panel and selecting Refresh Images from Source from the options. This will do another fetch for the media library, using the prefix if you set one, and display the most recent images on the main panel.
+
+If the images you were expecting are no longer listed after refreshing they have likely been removed from the media library.
