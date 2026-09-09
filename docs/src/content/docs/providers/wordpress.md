@@ -22,10 +22,6 @@ From wp-admin on your Wordpress site go to wp-admin/users.php, where there will 
 
 Authenticating with the Wordpress provider is optional and will allow you to uploaded to and delete images from the Wordpress media library. Without authenticating you can add a public Wordpress site url when adding a provider and the extension will fetch the json contents of the sites media library. Any images that have links in the json will be displayed on the extension main panel.
 
-## Limitations
-
-You cannot use the extension to upload images to or delete images from a Wordpress media library due to Wordpress providers not having authentication.
-
 ## Troubleshooting
 
 ### Images listed but not showing Wordpress
