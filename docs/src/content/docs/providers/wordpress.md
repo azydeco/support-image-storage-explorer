@@ -20,7 +20,7 @@ Adding a Wordpress provider to the extension side panel only requires you to add
 
 From wp-admin on your Wordpress site go to wp-admin/users.php, where there will be a table of users. Find the username column of the user that you want to authenticate with and copy it into the Username field in the extension. Hovering over the user's table row displays an Edit option. Click on Edit and scroll the to bottom of the page where Application Passwords are, you will need to create a new Application Password. Input a New Application Password Name and then click on Add Application Password. A new password will be displayed once and you will be unable to retrieve it after, so click on Copy and paste it into the extension's Application Password field, then create or update your provider. You will now be authenticated.
 
-Authenticating with the Wordpress provider is optional and will allow you to uploaded to and delete images from the Wordpress media library. Without authenticating you can add a public Wordpress site url when adding a provider and the extension will fetch the json contents of the sites media library. Any images that have links in the json will be displayed on the extension main panel.
+Authenticating with the Wordpress provider is optional and will allow you to upload to and delete images from the Wordpress media library. Without authenticating you can add a public Wordpress site url when adding a provider and the extension will fetch the json contents of the sites media library. Any images that have links in the json will be displayed on the extension main panel.
 
 ## Troubleshooting
 
